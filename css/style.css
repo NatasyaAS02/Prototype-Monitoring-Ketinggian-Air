@@ -1,0 +1,1912 @@
+/* ==========================================
+   GOOGLE FONT
+========================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ==========================================
+   RESET
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:#eef3f8;
+
+    color:#1f2937;
+
+    overflow-x:hidden;
+
+}
+
+/* ==========================================
+   WRAPPER
+========================================== */
+
+.wrapper{
+
+    display:flex;
+
+    min-height:100vh;
+
+}
+
+/* ==========================================
+   SIDEBAR
+========================================== */
+
+.sidebar{
+
+    width:260px;
+
+    background:#0f172a;
+
+    color:white;
+
+    position:fixed;
+
+    left:0;
+
+    top:0;
+
+    bottom:0;
+
+    padding:25px;
+
+    box-shadow:0 0 25px rgba(0,0,0,.2);
+
+}
+
+/* Logo */
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:12px;
+
+    font-size:24px;
+
+    font-weight:700;
+
+    margin-bottom:40px;
+
+}
+
+.logo i{
+
+    color:#38bdf8;
+
+}
+
+/* Menu */
+
+.menu{
+
+    list-style:none;
+
+    padding:0;
+
+}
+
+.menu li{
+
+    margin-bottom:12px;
+
+}
+
+.menu a{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:15px;
+
+    border-radius:12px;
+
+    transition:.3s;
+
+    font-size:15px;
+
+}
+
+.menu a:hover{
+
+    background:#1d4ed8;
+
+}
+
+.menu .active a{
+
+    background:#2563eb;
+
+}
+
+/* ===========================
+   MENU AKTIF
+=========================== */
+
+.sidebar .menu li.active a{
+
+    background:#2563eb;
+
+    color:#fff;
+
+    border-radius:10px;
+
+    transition:.3s;
+
+}
+
+.sidebar .menu li a{
+
+    transition:.3s;
+
+}
+
+/* ==========================================
+   MAIN CONTENT
+========================================== */
+
+.main-content{
+
+    margin-left:260px;
+
+    width:calc(100% - 260px);
+
+    padding:30px;
+
+}
+
+/* ==========================================
+   HEADER
+========================================== */
+
+.topbar{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:25px;
+
+}
+
+.topbar h2{
+
+    font-weight:700;
+
+    color:#0f172a;
+
+}
+
+.topbar p{
+
+    color:#64748b;
+
+    margin-top:5px;
+
+}
+
+.top-right{
+
+    text-align:right;
+
+}
+
+#clock{
+
+    font-size:28px;
+
+    font-weight:bold;
+
+    color:#2563eb;
+
+}
+
+#date{
+
+    color:#64748b;
+
+}
+/* ==========================================
+   DASHBOARD CARD
+========================================== */
+
+.dashboard-card{
+
+    background:#ffffff;
+
+    border-radius:18px;
+
+    padding:20px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    box-shadow:0 10px 25px rgba(15,23,42,.08);
+
+    transition:all .3s ease;
+
+    height:120px;
+
+}
+
+.dashboard-card:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 20px 35px rgba(37,99,235,.18);
+
+}
+
+.dashboard-card span{
+
+    color:#64748b;
+
+    font-size:14px;
+
+}
+
+.dashboard-card h3{
+
+    margin-top:8px;
+
+    font-size:30px;
+
+    font-weight:700;
+
+}
+
+/* ==========================================
+   ICON
+========================================== */
+
+.icon{
+
+    width:65px;
+
+    height:65px;
+
+    border-radius:18px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:white;
+
+    font-size:28px;
+
+}
+
+.blue{
+
+    background:#2563eb;
+
+}
+
+.green{
+
+    background:#22c55e;
+
+}
+
+.orange{
+
+    background:#f59e0b;
+
+}
+
+.red{
+
+    background:#ef4444;
+
+}
+
+/* ==========================================
+   PANEL
+========================================== */
+
+.panel{
+
+    background:white;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 25px rgba(15,23,42,.08);
+
+    overflow:hidden;
+
+}
+
+.panel-header{
+
+    background:#f8fafc;
+
+    padding:18px 25px;
+
+    border-bottom:1px solid #e5e7eb;
+
+}
+
+.panel-header h4{
+
+    margin:0;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    color:#0f172a;
+
+}
+
+.panel-body{
+
+    padding:25px;
+
+}
+
+/* ==========================================
+   CHART
+========================================== */
+
+canvas{
+
+    width:100% !important;
+
+    height:380px !important;
+
+}
+
+/* ==========================================
+   TANGKI AIR
+========================================== */
+
+.tank{
+
+    width:170px;
+
+    height:320px;
+
+    border:6px solid #2563eb;
+
+    border-radius:18px;
+
+    margin:auto;
+
+    overflow:hidden;
+
+    position:relative;
+
+    background:#f8fafc;
+
+}
+
+#waterLevel{
+
+    position:absolute;
+
+    bottom:0;
+
+    width:100%;
+
+    height:25%;
+
+    background:linear-gradient(
+        180deg,
+        #38bdf8,
+        #2563eb
+    );
+
+    transition:1s;
+
+}
+
+/* Efek gelombang */
+
+#waterLevel::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:-18px;
+
+    left:0;
+
+    width:200%;
+
+    height:40px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.35);
+
+    animation:wave 4s linear infinite;
+
+}
+
+@keyframes wave{
+
+    from{
+
+        transform:translateX(0);
+
+    }
+
+    to{
+
+        transform:translateX(-50%);
+
+    }
+
+}
+
+/* ==========================================
+   BUTTON
+========================================== */
+
+.btn{
+
+    border-radius:12px;
+
+    font-weight:600;
+
+    padding:12px;
+
+    transition:.3s;
+
+}
+
+.btn:hover{
+
+    transform:scale(1.03);
+
+}
+
+/* ==========================================
+   SELECT
+========================================== */
+
+.form-select{
+
+    border-radius:12px;
+
+    padding:12px;
+
+}
+/* ==========================================
+   TABLE
+========================================== */
+
+.table{
+
+    margin-bottom:0;
+
+}
+
+.table thead{
+
+    background:#2563eb;
+
+    color:white;
+
+}
+
+.table thead th{
+
+    border:none;
+
+    padding:15px;
+
+    font-weight:600;
+
+}
+
+.table tbody td{
+
+    padding:15px;
+
+    vertical-align:middle;
+
+}
+
+.table tbody tr{
+
+    transition:.3s;
+
+}
+
+.table tbody tr:hover{
+
+    background:#f1f5f9;
+
+}
+
+/* ==========================================
+   BADGE
+========================================== */
+
+.badge{
+
+    padding:8px 14px;
+
+    border-radius:20px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+}
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+.footer{
+
+    color:#64748b;
+
+    text-align:center;
+
+    padding:20px 0;
+
+}
+
+.footer p{
+
+    margin-bottom:5px;
+
+    font-weight:600;
+
+}
+
+/* ==========================================
+   SCROLLBAR
+========================================== */
+
+::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#e5e7eb;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#2563eb;
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#1d4ed8;
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:992px){
+
+    .sidebar{
+
+        width:220px;
+
+    }
+
+    .main-content{
+
+        margin-left:220px;
+
+        width:calc(100% - 220px);
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .wrapper{
+
+        display:block;
+
+    }
+
+    .sidebar{
+
+        position:relative;
+
+        width:100%;
+
+        height:auto;
+
+    }
+
+    .main-content{
+
+        margin-left:0;
+
+        width:100%;
+
+        padding:20px;
+
+    }
+
+    .topbar{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:15px;
+
+    }
+
+    .top-right{
+
+        text-align:left;
+
+    }
+
+    .dashboard-card{
+
+        margin-bottom:20px;
+
+    }
+
+    .tank{
+
+        width:140px;
+
+        height:250px;
+
+    }
+
+}
+
+@media(max-width:576px){
+
+    #clock{
+
+        font-size:22px;
+
+    }
+
+    .dashboard-card{
+
+        flex-direction:column;
+
+        text-align:center;
+
+        height:auto;
+
+    }
+
+    .icon{
+
+        margin-bottom:10px;
+
+    }
+
+}
+
+html{
+
+    scroll-behavior: smooth;
+
+}
+
+
+/* ==========================
+   DARK MODE
+========================== */
+
+body.dark-mode{
+    background:#111827;
+    color:#f3f4f6;
+}
+
+body.dark-mode .sidebar{
+    background:#1f2937;
+}
+
+body.dark-mode .panel{
+    background:#1f2937;
+    color:white;
+}
+
+body.dark-mode .dashboard-card{
+    background:#1f2937;
+    color:white;
+}
+
+body.dark-mode .topbar{
+    color:white;
+}
+
+body.dark-mode table{
+    color:white;
+}
+
+body.dark-mode .table{
+    color:white;
+}
+
+body.dark-mode .form-control,
+body.dark-mode .form-select{
+    background:#374151;
+    color:white;
+    border:none;
+}
+
+body.dark-mode footer{
+    color:white;
+}
+
+/* ==========================================
+   FILTER RIWAYAT
+========================================== */
+
+.history-filter {
+    margin-top: 35px;
+    margin-bottom: 25px;
+    padding: 5px 0;
+}
+
+.history-filter .form-control,
+.history-filter .form-select {
+    height: 58px;
+    border-radius: 14px;
+    border: 1px solid #e5e7eb;
+    padding: 0 18px;
+    font-size: 16px;
+    background: #ffffff;
+}
+
+.history-filter .btn {
+    height: 58px;
+    border-radius: 14px;
+    font-weight: 600;
+}
+
+
+/* Jarak dari bagian Kontrol Pintu */
+
+#riwayat {
+    padding-top: 25px;
+}
+
+/* ==========================================
+   FILTER RIWAYAT
+========================================== */
+
+.filter-card {
+
+    background: #ffffff;
+
+    border-radius: 20px;
+
+    padding: 24px;
+
+    margin: 25px 0;
+
+    box-shadow:
+        0 4px 15px rgba(0,0,0,0.06);
+
+}
+
+
+/* Judul */
+
+.filter-title {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    font-size: 20px;
+
+    font-weight: 600;
+
+    margin-bottom: 20px;
+
+}
+
+
+/* Grid filter */
+
+.filter-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr
+        1fr
+        1.5fr
+        150px;
+
+    gap: 16px;
+
+    align-items: end;
+
+}
+
+
+/* Item */
+
+.filter-item {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 7px;
+
+}
+
+
+/* Label */
+
+.filter-item label {
+
+    font-size: 14px;
+
+    font-weight: 500;
+
+    color: #475569;
+
+}
+
+
+/* Input + Select */
+
+.filter-item input,
+.filter-item select {
+
+    width: 100%;
+
+    height: 48px;
+
+    padding: 0 14px;
+
+    border: 1px solid #dbe2ea;
+
+    border-radius: 12px;
+
+    background: #ffffff;
+
+    font-size: 15px;
+
+    outline: none;
+
+    box-sizing: border-box;
+
+}
+
+
+.filter-item input:focus,
+.filter-item select:focus {
+
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 3px rgba(37,99,235,0.10);
+
+}
+
+
+/* ==========================================
+   RESET
+========================================== */
+
+.btn-reset {
+
+    width: 100%;
+
+    height: 48px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: #64748b;
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+
+}
+
+
+.btn-reset:hover {
+
+    background: #475569;
+
+}
+
+
+/* ==========================================
+   RIWAYAT
+========================================== */
+
+.history-card {
+
+    background: #ffffff;
+
+    border-radius: 20px;
+
+    margin-top: 25px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 4px 15px rgba(0,0,0,0.06);
+
+}
+
+
+/* Header */
+
+.history-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 22px 24px;
+
+    border-bottom: 1px solid #e5e7eb;
+
+}
+
+
+.history-title {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    font-size: 20px;
+
+    font-weight: 600;
+
+}
+
+
+/* Export */
+
+.btn-export {
+
+    border: none;
+
+    background: #2563eb;
+
+    color: white;
+
+    padding: 12px 18px;
+
+    border-radius: 10px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+
+}
+
+
+.btn-export:hover {
+
+    background: #1d4ed8;
+
+}
+
+
+/* ==========================================
+   TABLE
+========================================== */
+
+.history-table-wrapper {
+
+    width: 100%;
+
+    overflow-x: auto;
+
+}
+
+
+.history-table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    min-width: 700px;
+
+}
+
+
+.history-table th {
+
+    background: #f8fafc;
+
+    color: #334155;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    text-align: left;
+
+    padding: 16px 20px;
+
+    white-space: nowrap;
+
+}
+
+
+.history-table td {
+
+    padding: 16px 20px;
+
+    border-top: 1px solid #eef2f6;
+
+    font-size: 14px;
+
+    color: #475569;
+
+}
+
+
+.history-table tbody tr:hover {
+
+    background: #f8fafc;
+
+}
+
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 1000px) {
+
+    .filter-grid {
+
+        grid-template-columns:
+            1fr
+            1fr;
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .filter-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .history-header {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 15px;
+
+    }
+
+
+    .btn-export {
+
+        width: 100%;
+
+    }
+
+}
+
+/* ==========================================
+   DARK MODE - PERBAIKAN FONT
+========================================== */
+
+body.dark-mode {
+    color: #f1f5f9;
+}
+
+/* Semua teks umum */
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6,
+body.dark-mode p,
+body.dark-mode span,
+body.dark-mode label,
+body.dark-mode div {
+    color: #f1f5f9;
+}
+
+
+/* ==========================================
+   CARD
+========================================== */
+
+body.dark-mode .card,
+body.dark-mode .dashboard-card,
+body.dark-mode .monitoring-card,
+body.dark-mode .control-card,
+body.dark-mode .history-card,
+body.dark-mode .filter-card,
+body.dark-mode .settings-card {
+    background: #1e293b;
+    color: #f1f5f9;
+}
+
+
+/* ==========================================
+   JUDUL CARD
+========================================== */
+
+body.dark-mode .card-title,
+body.dark-mode .section-title,
+body.dark-mode .title {
+    color: #ffffff !important;
+}
+
+
+/* ==========================================
+   LABEL
+========================================== */
+
+body.dark-mode label {
+    color: #e2e8f0 !important;
+}
+
+
+/* ==========================================
+   INPUT & SELECT
+========================================== */
+
+body.dark-mode input,
+body.dark-mode select,
+body.dark-mode textarea {
+    background-color: #334155;
+    color: #ffffff !important;
+    border-color: #475569;
+}
+
+
+/* Placeholder input */
+
+body.dark-mode input::placeholder {
+    color: #cbd5e1 !important;
+    opacity: 1;
+}
+
+
+/* Dropdown */
+
+body.dark-mode select option {
+    background-color: #1e293b;
+    color: #ffffff;
+}
+
+
+/* ==========================================
+   FILTER RIWAYAT
+========================================== */
+
+body.dark-mode .filter-container,
+body.dark-mode .filter-card {
+    background: #1e293b;
+}
+
+body.dark-mode .filter-container h3,
+body.dark-mode .filter-container label {
+    color: #ffffff !important;
+}
+
+
+/* ==========================================
+   TABEL RIWAYAT
+========================================== */
+
+body.dark-mode table {
+    color: #f8fafc;
+}
+
+body.dark-mode table thead {
+    background: #334155;
+}
+
+body.dark-mode table thead th {
+    color: #ffffff !important;
+}
+
+body.dark-mode table tbody td {
+    color: #e2e8f0 !important;
+    border-color: #475569;
+}
+
+body.dark-mode table tbody tr {
+    background: #1e293b;
+}
+
+body.dark-mode table tbody tr:hover {
+    background: #334155;
+}
+
+
+/* ==========================================
+   PENGATURAN
+========================================== */
+
+body.dark-mode .settings-card h3,
+body.dark-mode .settings-card label {
+    color: #ffffff !important;
+}
+
+body.dark-mode .settings-card input {
+    color: #ffffff !important;
+}
+
+
+/* ==========================================
+   TEKS KECIL
+========================================== */
+
+body.dark-mode small,
+body.dark-mode .text-muted {
+    color: #cbd5e1 !important;
+}
+
+
+/* ==========================================
+   MODE OPERASI
+========================================== */
+
+body.dark-mode .mode-label {
+    color: #ffffff !important;
+}
+
+body.dark-mode #mode {
+    color: #ffffff !important;
+    background-color: #334155;
+}
+
+
+/* ==========================================
+   STATUS / INFORMASI
+========================================== */
+
+body.dark-mode .info-text {
+    color: #e2e8f0 !important;
+}
+
+
+/* ==========================================
+   TOMBOL RESET
+========================================== */
+
+body.dark-mode #resetFilter {
+    color: #ffffff !important;
+}
+
+
+/* ==========================================
+   JUDUL RIWAYAT
+========================================== */
+
+body.dark-mode #historyTitle,
+body.dark-mode .history-title {
+    color: #ffffff !important;
+}
+
+body.dark-mode .filter-card h3 {
+    color: #ffffff !important;
+}
+
+body.dark-mode .filter-card label {
+    color: #e2e8f0 !important;
+}
+
+body.dark-mode .history-card h3 {
+    color: #ffffff !important;
+}
+
+body.dark-mode .history-card th {
+    color: #ffffff !important;
+}
+
+body.dark-mode .history-card td {
+    color: #e2e8f0 !important;
+}
+
+/* ==========================================
+   DARK MODE - WATERGATE
+   PERBAIKAN TEKS AGAR TERBACA
+========================================== */
+
+body.dark-mode {
+    color: #f8fafc;
+}
+
+
+/* ==========================================
+   PANEL
+========================================== */
+
+body.dark-mode .panel {
+    background-color: #1e293b !important;
+    color: #f8fafc !important;
+}
+
+
+/* Header panel */
+body.dark-mode .panel-header {
+    background-color: #f8fafc !important;
+    color: #0f172a !important;
+    border-color: #334155 !important;
+}
+
+
+/* Judul panel */
+body.dark-mode .panel-header h4 {
+    color: #0f172a !important;
+}
+
+
+/* Icon judul panel */
+body.dark-mode .panel-header h4 i {
+    color: #0f172a !important;
+}
+
+
+/* Isi panel */
+body.dark-mode .panel-body {
+    background-color: #1e293b !important;
+    color: #f8fafc !important;
+}
+
+
+/* ==========================================
+   LABEL
+========================================== */
+
+body.dark-mode .form-label,
+body.dark-mode label {
+    color: #f8fafc !important;
+}
+
+
+/* ==========================================
+   INPUT
+========================================== */
+
+body.dark-mode .form-control,
+body.dark-mode .form-select {
+    background-color: #334155 !important;
+    color: #ffffff !important;
+    border-color: #475569 !important;
+}
+
+
+/* Placeholder */
+body.dark-mode .form-control::placeholder {
+    color: #cbd5e1 !important;
+    opacity: 1;
+}
+
+
+/* Dropdown option */
+body.dark-mode .form-select option {
+    background-color: #334155;
+    color: #ffffff;
+}
+
+
+/* ==========================================
+   TABEL STATUS SISTEM
+========================================== */
+
+body.dark-mode .table {
+    color: #f8fafc !important;
+}
+
+body.dark-mode .table td {
+    color: #f8fafc !important;
+    border-color: #475569 !important;
+}
+
+
+/* ==========================================
+   GRAFIK
+========================================== */
+
+body.dark-mode #chartAir {
+    color: #ffffff !important;
+}
+
+
+/* ==========================================
+   PERSENTASE TANGKI
+========================================== */
+
+body.dark-mode #persenAir {
+    color: #ffffff !important;
+}
+
+
+/* ==========================================
+   FILTER RIWAYAT
+========================================== */
+
+body.dark-mode .filter-card,
+body.dark-mode .-card {
+    background-color: #1e293b !important;
+    color: #f8fafc !important;
+}
+
+body.dark-mode .filter-title {
+    color: #ffffff !important;
+}
+
+body.dark-mode .filter-title i {
+    color: #ffffff !important;
+}
+
+body.dark-mode .filter-item label {
+    color: #e2e8f0 !important;
+}
+
+body.dark-mode .filter-item input,
+body.dark-mode .filter-item select {
+    background-color: #334155 !important;
+    color: #ffffff !important;
+    border-color: #475569 !important;
+}
+
+
+/* ==========================================
+   RIWAYAT
+========================================== */
+
+body.dark-mode .history-card {
+    background-color: #1e293b !important;
+    color: #ffffff !important;
+}
+
+body.dark-mode .history-header {
+    background-color: #1e293b !important;
+    color: #ffffff !important;
+}
+
+body.dark-mode .history-title {
+    color: #ffffff !important;
+}
+
+body.dark-mode .history-title span {
+    color: #ffffff !important;
+}
+
+body.dark-mode .history-table {
+    color: #f8fafc !important;
+}
+
+body.dark-mode .history-table th {
+    color: #ffffff !important;
+    background-color: #334155 !important;
+}
+
+body.dark-mode .history-table td {
+    color: #e2e8f0 !important;
+    border-color: #475569 !important;
+}
+
+
+/* ==========================================
+   PENGATURAN
+========================================== */
+
+body.dark-mode #pengaturan .panel-header h4 {
+    color: #0f172a !important;
+}
+
+body.dark-mode #pengaturan .panel-body {
+    color: #ffffff !important;
+}
+
+body.dark-mode #pengaturan .form-label {
+    color: #ffffff !important;
+}
+
+
+/* ==========================================
+   RADIO BUTTON TEMA
+========================================== */
+
+body.dark-mode .form-check-label {
+    color: #f8fafc !important;
+}
+
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+body.dark-mode .footer {
+    color: #cbd5e1 !important;
+}
+
+body.dark-mode .footer p,
+body.dark-mode .footer small {
+    color: #cbd5e1 !important;
+}
+
+/* ==========================================
+   PANEL DARK MODE
+========================================== */
+
+body.dark-mode .panel {
+    background: #1e293b !important;
+    color: #ffffff !important;
+}
+
+body.dark-mode .panel-header {
+    background: #f8fafc !important;
+}
+
+body.dark-mode .panel-header h4 {
+    color: #0f172a !important;
+}
+
+body.dark-mode .panel-header h4 i {
+    color: #0f172a !important;
+}
+
+body.dark-mode .panel-body {
+    color: #ffffff !important;
+}
+
+/* ==========================================
+   DARK MODE - STATUS SISTEM
+========================================== */
+
+body.dark-theme .panel,
+body.dark-theme .panel-header,
+body.dark-theme .panel-body {
+    color: #f8fafc;
+}
+
+/* Judul panel */
+body.dark-theme .panel-header h4 {
+    color: #ffffff !important;
+}
+
+/* Tabel Status Sistem */
+body.dark-theme .panel .table {
+    color: #f8fafc !important;
+}
+
+body.dark-theme .panel .table td,
+body.dark-theme .panel .table th {
+    color: #f8fafc !important;
+    background-color: transparent !important;
+    border-color: rgba(255, 255, 255, 0.12);
+}
+
+/* Tulisan status */
+body.dark-theme .panel .badge {
+    color: #ffffff !important;
+}
+
+/* Label dan teks umum */
+body.dark-theme .panel label,
+body.dark-theme .panel p,
+body.dark-theme .panel span {
+    color: #f8fafc;
+}
+
+/* ===========================
+   STATUS SISTEM
+=========================== */
+
+.system-table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+.system-table td{
+    padding:16px;
+    border-bottom:1px solid #dcdcdc;
+}
+
+/* Tema terang */
+body:not(.dark-mode) .system-table{
+    background:#ffffff;
+    color:#1f2937;
+}
+
+/* Tema gelap */
+body.dark-mode .system-table{
+    background:#1f2937;
+    color:#f8fafc;
+}
+
+body.dark-mode .system-table td{
+    border-color:#374151;
+}
+.system-table{
+    background:#fff;
+}
+
+.system-table td{
+    color:#111827;
+}
+
+/* ==========================================
+   LOGIN PAGE
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Poppins",sans-serif;
+}
+
+body{
+
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:#edf3fb;
+
+    background-image:
+    radial-gradient(circle at top left,#d8e8ff 0,#edf3fb 60%);
+
+}
+
+/* ==========================================
+   LOGIN BOX
+========================================== */
+
+.login-box{
+
+    width:430px;
+
+    background:#fff;
+
+    border-radius:20px;
+
+    padding:45px;
+
+    box-shadow:
+    0 15px 35px rgba(0,0,0,.15);
+
+}
+
+/* ==========================================
+   ICON
+========================================== */
+
+.login-box h2{
+
+    text-align:center;
+
+    color:#0d4ea6;
+
+    font-weight:700;
+
+    margin-bottom:10px;
+
+    font-size:30px;
+
+}
+
+.login-box p{
+
+    text-align:center;
+
+    color:#666;
+
+    margin-bottom:30px;
+
+}
+
+/* ==========================================
+   INPUT
+========================================== */
+
+.form-control{
+
+    height:50px;
+
+    border-radius:10px;
+
+    border:1px solid #d9d9d9;
+
+    transition:.3s;
+
+}
+
+.form-control:focus{
+
+    border-color:#1976d2;
+
+    box-shadow:0 0 8px rgba(25,118,210,.25);
+
+}
+
+/* ==========================================
+   BUTTON
+========================================== */
+
+.btn-primary{
+
+    height:50px;
+
+    border-radius:10px;
+
+    font-weight:600;
+
+    background:#1565c0;
+
+    border:none;
+
+    transition:.3s;
+
+}
+
+.btn-primary:hover{
+
+    background:#0d47a1;
+
+}
+
+/* ==========================================
+   STATUS LOGIN
+========================================== */
+
+#loginStatus{
+
+    min-height:25px;
+
+    font-size:14px;
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:500px){
+
+.login-box{
+
+    width:95%;
+
+    padding:30px;
+
+}
+
+}
+
+.logo{
+
+    width:75px;
+    height:75px;
+
+    border-radius:50%;
+
+    background:white;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+.logo img{
+
+    width:45px;
+
+}
+
+.wave{
+
+    position:absolute;
+
+    bottom:0;
+
+    left:0;
+
+    width:100%;
+
+    height:140px;
+
+    background:white;
+
+    border-radius:100% 100% 0 0;
+
+    opacity:.9;
+
+}
+
+.wave{
+
+    position:absolute;
+
+    bottom:-60px;
+
+    left:-5%;
+
+    width:110%;
+
+    height:180px;
+
+    background:white;
+
+    border-radius:50%;
+
+}
